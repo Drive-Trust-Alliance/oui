@@ -1,6 +1,5 @@
 //
 //  oui.cpp
-//  SED
 //
 //  IEEE Organizationally unique identifiers
 //  see https://en.wikipedia.org/wiki/Organizationally_unique_identifier
