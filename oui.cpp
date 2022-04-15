@@ -9,7 +9,11 @@
 //
 
 #include "oui.hpp"
-typedef struct _data_pair{const char *hex_of_oui; const char *manufacturer;} data_pair;
+typedef
+struct _data_pair{
+    const char *hex_of_oui;
+    const char *manufacturer;
+} data_pair;
 static data_pair data[]={
 #define __hex__(oui) #oui
 #include "oui.inc"
@@ -25,4 +29,11 @@ std::unordered_map<std::string,std::string>make_table() {
     return t;
 }
 
-const std::unordered_map<std::string,std::string>manufacturer_for_oui=make_table();
+#if defined(__clang__)
+[[clang::no_destroy]]
+#elif defined(__GNUC__)
+[[no_destroy]]
+#endif
+const std::unordered_map<std::string // OUI as hex string
+                        ,std::string // manufacturer
+                        >manufacturer_for_oui=make_table();
