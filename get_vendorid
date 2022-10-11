@@ -1,0 +1,2 @@
+#!/bin/bash
+curl https://www.t10.org/ftp/t10/vendorid.txt > t10_vendorid.txt 
