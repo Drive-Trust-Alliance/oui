@@ -9,10 +9,11 @@
 //
 
 #include "oui.hpp"
+
 typedef
 struct _data_pair{
-    const char *hex_of_oui;
-    const char *manufacturer;
+    CString hex_of_oui;
+    CString manufacturer;
 } data_pair;
 static data_pair data[]={
 #define __hex__(oui) #oui
@@ -20,20 +21,18 @@ static data_pair data[]={
 #undef __hex__
 };
 
-static
-std::unordered_map<std::string,std::string>make_table() {
-    std::unordered_map<std::string,std::string>t;
-    for (data_pair *p=&data[0], *pend=&data[sizeof(data)/sizeof(data[0])]; p!=pend; p++)
-        t[p->hex_of_oui]=p->manufacturer;
-    t.reserve( t.size() );
-    return t;
-}
 
 #if defined(__clang__)
 [[clang::no_destroy]]
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const std::unordered_map<std::string // OUI as hex string
-                        ,std::string // manufacturer
-                        >manufacturer_for_oui=make_table();
+const CString_Lookup_Table manufacturer_for_oui =
+    make_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+#if defined(__clang__)
+[[clang::no_destroy]]
+#elif defined(__GNUC__)
+[[no_destroy]]
+#endif
+const CString_Lookup_Table oui_for_manufacturer =
+    make_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));

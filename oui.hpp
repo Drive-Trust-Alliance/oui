@@ -11,9 +11,9 @@
 #ifndef oui_hpp
 #define oui_hpp
 
-#include <string>
-#include <unordered_map>
+#include <oui/CStringMap.hpp>
 
-extern const std::unordered_map<std::string,std::string>manufacturer_for_oui;
+extern "C" const CString_Lookup_Table manufacturer_for_oui;
+extern "C" const CString_Lookup_Table oui_for_manufacturer;
 
 #endif /* oui_hpp */

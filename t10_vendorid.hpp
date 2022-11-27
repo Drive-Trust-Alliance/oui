@@ -11,9 +11,9 @@
 #ifndef t10_vendorid_hpp
 #define t10_vendorid_hpp
 
-#include <string>
-#include <unordered_map>
+#include <oui/CStringMap.hpp>
 
-extern const std::unordered_map<std::string,std::string>vendor_for_vendorid;
+extern const CString_Lookup_Table vendor_for_vendorID;
+extern const CString_Lookup_Table vendorID_for_vendor;
 
 #endif /* t10_vendorid_hpp */

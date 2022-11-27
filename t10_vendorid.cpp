@@ -11,27 +11,26 @@
 #include "t10_vendorid.hpp"
 typedef
 struct _data_pair{
-    const char *vendorid;
-    const char *vendor;
+    CString vendorid;
+    CString vendor;
 } data_pair;
 static data_pair data[]={
 #include "t10_vendorid.inc"
 };
 
-static
-std::unordered_map<std::string,std::string>make_table() {
-    std::unordered_map<std::string,std::string>t;
-    for (data_pair *p=&data[0], *pend=&data[sizeof(data)/sizeof(data[0])]; p!=pend; p++)
-        t[p->vendorid]=p->vendor;
-    t.reserve( t.size() );
-    return t;
-}
 
 #if defined(__clang__)
 [[clang::no_destroy]]
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const std::unordered_map<std::string // vendor id as registered
-                        ,std::string // vendor
-                        >vendor_for_vendorid=make_table();
+const CString_Lookup_Table vendor_for_vendorID =
+    make_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+
+#if defined(__clang__)
+[[clang::no_destroy]]
+#elif defined(__GNUC__)
+[[no_destroy]]
+#endif
+const CString_Lookup_Table vendorID_for_vendor =
+    make_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
