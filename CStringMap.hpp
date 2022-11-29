@@ -17,6 +17,40 @@
 
 typedef const char * CString;
 
+struct CStringKeyValuePair {
+    CString key;
+    CString value;
+};
+
+
+struct equal_to_CString
+{
+    typedef bool __result_type;  // used by valarray
+    bool operator()(const CString& __x, const CString& __y) const
+        {
+            return  0 == strcmp(__x, __y) ;
+        }
+};
+
+struct hash_CString
+{
+    typedef size_t __result_type;  // used by valarray
+    size_t operator()(const CString& __x) const
+        {
+            size_t x_length = strlen(__x);
+            // define and use a max length so the buffer size is known at compile time
+            size_t result = std::__murmur2_or_cityhash<size_t>()(__x, x_length);
+            return result;
+        }
+};
+
+
+typedef std::unordered_map< CString,
+                            CString,
+                            hash_CString,
+                            equal_to_CString>
+    CString_Lookup_Table;
+
 
 static size_t canonicalize(const CString & raw, size_t raw_length, char result[]) {
     result[0]=0;
@@ -73,12 +107,11 @@ struct canonically_hash_CString
 };
 
 
-typedef std::unordered_map<CString,CString, canonically_hash_CString, canonically_equal_to_CString> CString_Lookup_Table;
-
-struct CStringKeyValuePair {
-    CString key;
-    CString value;
-};
+typedef std::unordered_map< CString,
+                            CString,
+                            canonically_hash_CString,
+                            canonically_equal_to_CString>
+    CString_Canonical_Lookup_Table;
 
 static __unused
 CString_Lookup_Table make_table( CStringKeyValuePair data[], size_t nData) {
@@ -92,6 +125,15 @@ CString_Lookup_Table make_table( CStringKeyValuePair data[], size_t nData) {
 static __unused
 CString_Lookup_Table make_inverse_table( CStringKeyValuePair data[], size_t nData) {
     CString_Lookup_Table t;
+    for (auto *p=&data[0], *pend=&data[nData]; p!=pend; p++)
+        t[p->value]=p->key;   // roles reversed, collisions expected
+    t.reserve( t.size() );
+    return t;
+}
+
+static __unused
+CString_Canonical_Lookup_Table make_canonical_inverse_table( CStringKeyValuePair data[], size_t nData) {
+    CString_Canonical_Lookup_Table t;
     for (auto *p=&data[0], *pend=&data[nData]; p!=pend; p++)
         t[p->value]=p->key;   // roles reversed, collisions expected
     t.reserve( t.size() );
