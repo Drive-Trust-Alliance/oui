@@ -10,16 +10,12 @@
 
 #include "oui.hpp"
 
-typedef
-struct _data_pair{
-    CString hex_of_oui;
-    CString manufacturer;
-} data_pair;
-static data_pair data[]={
+static CStringKeyValuePair data[]={
 #define __hex__(oui) #oui
 #include "oui.inc"
 #undef __hex__
 };
+static const size_t nData=sizeof(data)/sizeof(data[0]);
 
 
 #if defined(__clang__)
@@ -28,7 +24,7 @@ static data_pair data[]={
 [[no_destroy]]
 #endif
 const CString_Lookup_Table manufacturer_for_oui =
-    make_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+    make_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
 [[clang::no_destroy]]
@@ -36,7 +32,7 @@ const CString_Lookup_Table manufacturer_for_oui =
 [[no_destroy]]
 #endif
 const CString_Lookup_Table oui_for_manufacturer =
-    make_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+    make_inverse_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
 [[clang::no_destroy]]
@@ -44,4 +40,4 @@ const CString_Lookup_Table oui_for_manufacturer =
 [[no_destroy]]
 #endif
 const CString_Canonical_Lookup_Table oui_for_manufacturer_canonically =
-    make_canonical_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+    make_inverse_table<CString_Canonical_Lookup_Table>(data,nData);

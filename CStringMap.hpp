@@ -52,6 +52,7 @@ typedef std::unordered_map< CString,
     CString_Lookup_Table;
 
 
+
 static size_t canonicalize(const CString & raw, size_t raw_length, char result[]) {
     result[0]=0;
 //    size_t result_length=0;
@@ -106,50 +107,31 @@ struct canonically_hash_CString
         }
 };
 
-
 typedef std::unordered_map< CString,
                             CString,
                             canonically_hash_CString,
                             canonically_equal_to_CString>
     CString_Canonical_Lookup_Table;
 
-static __unused
-CString_Lookup_Table make_table( CStringKeyValuePair data[], size_t nData) {
-    CString_Lookup_Table t;
+
+
+template <typename _Table>
+_Table make_table( CStringKeyValuePair data[], size_t nData) {
+    _Table t;
     for (auto *p=&data[0], *pend=&data[nData]; p!=pend; p++)
         t[p->key]=p->value;
     t.reserve( t.size() );
     return t;
 }
 
-static __unused
-CString_Lookup_Table make_inverse_table( CStringKeyValuePair data[], size_t nData) {
-    CString_Lookup_Table t;
+template <typename _Table>
+_Table make_inverse_table( CStringKeyValuePair data[], size_t nData) {
+    _Table t;
     for (auto *p=&data[0], *pend=&data[nData]; p!=pend; p++)
         t[p->value]=p->key;   // roles reversed, collisions expected
     t.reserve( t.size() );
     return t;
 }
-//template <typename _Table>
-//_Table make_inverse_table( CStringKeyValuePair data[], size_t nData) {
-//    _Table t;
-//    for (auto *p=&data[0], *pend=&data[nData]; p!=pend; p++)
-//        t[p->value]=p->key;   // roles reversed, collisions expected
-//    t.reserve( t.size() );
-//    return t;
-//}
-//
 
-
-
-
-static __unused
-CString_Canonical_Lookup_Table make_canonical_inverse_table( CStringKeyValuePair data[], size_t nData) {
-    CString_Canonical_Lookup_Table t;
-    for (auto *p=&data[0], *pend=&data[nData]; p!=pend; p++)
-        t[p->value]=p->key;   // roles reversed, collisions expected
-    t.reserve( t.size() );
-    return t;
-}
 
 #endif /* CStringMap_hpp */

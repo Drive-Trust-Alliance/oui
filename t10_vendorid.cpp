@@ -9,15 +9,11 @@
 //
 
 #include "t10_vendorid.hpp"
-typedef
-struct _data_pair{
-    CString vendorid;
-    CString vendor;
-} data_pair;
-static data_pair data[]={
+
+static CStringKeyValuePair data[]={
 #include "t10_vendorid.inc"
 };
-
+static const size_t nData = sizeof(data)/sizeof(data[0]);
 
 #if defined(__clang__)
 [[clang::no_destroy]]
@@ -25,7 +21,7 @@ static data_pair data[]={
 [[no_destroy]]
 #endif
 const CString_Lookup_Table vendor_for_vendorID =
-    make_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+    make_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
 [[clang::no_destroy]]
@@ -33,7 +29,7 @@ const CString_Lookup_Table vendor_for_vendorID =
 [[no_destroy]]
 #endif
 const CString_Lookup_Table vendorID_for_vendor =
-    make_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+    make_inverse_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
 [[clang::no_destroy]]
@@ -41,4 +37,5 @@ const CString_Lookup_Table vendorID_for_vendor =
 [[no_destroy]]
 #endif
 const CString_Canonical_Lookup_Table vendorID_for_vendor_canonically =
-    make_canonical_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+    make_inverse_table<CString_Canonical_Lookup_Table>(data,nData);
+

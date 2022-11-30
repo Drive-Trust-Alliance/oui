@@ -13,8 +13,8 @@
 
 #include <oui/CStringMap.hpp>
 
-extern const CString_Lookup_Table vendor_for_vendorID;
-extern const CString_Lookup_Table vendorID_for_vendor;
-extern const CString_Canonical_Lookup_Table vendorID_for_vendor_canonically;
+extern "C" const CString_Lookup_Table vendor_for_vendorID;
+extern "C" const CString_Lookup_Table vendorID_for_vendor;
+extern "C" const CString_Canonical_Lookup_Table vendorID_for_vendor_canonically;
 
 #endif /* t10_vendorid_hpp */
