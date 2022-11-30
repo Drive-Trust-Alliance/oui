@@ -1,6 +1,14 @@
 # oui
-Access IEEE OUI data
+Access IEEE OUI data and the T10 Vendor ID data
 
-C++ class for access the IEEE OUI database
+C++ class for accessing the IEEE OUI database and the T10 Vendor IT data
 
-The IEEE OUI data is kept in a flat file which can be refreshed by a simple script, included.
+Data are kept in flat files which can be refreshed by simple scripts, included.
+
+A "canonical" form for vendor/manufacturer information is defined to allow inexact
+matching.  The canonical form is defined by mapping each alphanum character to its
+corresponding uppercase character, mapping each non-empty sequence of non-alphanum
+characters to a single blank character, and by trimming any leading or trailing blank.
+
+Two vendor values are determined to match canonically iff their canonical
+forms match.
