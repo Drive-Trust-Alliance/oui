@@ -34,3 +34,11 @@ const CString_Lookup_Table vendor_for_vendorID =
 #endif
 const CString_Lookup_Table vendorID_for_vendor =
     make_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
+
+#if defined(__clang__)
+[[clang::no_destroy]]
+#elif defined(__GNUC__)
+[[no_destroy]]
+#endif
+const CString_Canonical_Lookup_Table vendorID_for_vendor_canonically =
+    make_canonical_inverse_table(reinterpret_cast<CStringKeyValuePair *>(data), sizeof(data)/sizeof(data[0]));
