@@ -130,6 +130,18 @@ CString_Lookup_Table make_inverse_table( CStringKeyValuePair data[], size_t nDat
     t.reserve( t.size() );
     return t;
 }
+//template <typename _Table>
+//_Table make_inverse_table( CStringKeyValuePair data[], size_t nData) {
+//    _Table t;
+//    for (auto *p=&data[0], *pend=&data[nData]; p!=pend; p++)
+//        t[p->value]=p->key;   // roles reversed, collisions expected
+//    t.reserve( t.size() );
+//    return t;
+//}
+//
+
+
+
 
 static __unused
 CString_Canonical_Lookup_Table make_canonical_inverse_table( CStringKeyValuePair data[], size_t nData) {

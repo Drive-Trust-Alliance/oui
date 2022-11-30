@@ -15,5 +15,6 @@
 
 extern "C" const CString_Lookup_Table manufacturer_for_oui;
 extern "C" const CString_Lookup_Table oui_for_manufacturer;
+extern "C" const CString_Canonical_Lookup_Table oui_for_manufacturer_canonically;
 
 #endif /* oui_hpp */
