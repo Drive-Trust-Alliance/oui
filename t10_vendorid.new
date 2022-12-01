@@ -1,42 +1,5 @@
-This file contains the list of T10 Technical Committee vendor identifications
-as of 2022/11/30 at 00:17:41.  The purpose of this list is to help avoid
-redundant usage of vendor identifications.   T10, a subcommittee of the
-InterNational Committee on Information Technology Standards (INCITS),
-maintains a list of vendor identifications currently in use.  Please use the
-web form at www.t10.org/members/vendorid.htm to submit your vendor
-identification request prior to using a new vendor identification.  This will
-avoid potential conflicts.
-
-When requesting a new vendor ID, please specify your preferred vendor ID
-code and your organization name EXACTLY as you would like it to appear in
-this list.  There are a few simple rules to follow:
-
-   1.   The Vendor Identification identifies a Vendor, not a product or 
-        product line. If you need to identify a product, consider using 
-        the PRODUCT IDENTIFICATION field in the Standard INQUIRY data 
-        format (see the latest SPC-n standard).
-
-   2.   The Vendor ID code shall be 8 or fewer ASCII graphic characters
-        (codes 21h through 7Eh). Some standards that use T10 Vendor ID
-        strings add space characters (20h) to the right of Vendor IDs
-        shorter than 8 characters to make exactly 8 characters.
-
-   3.   The Organization Name shall be 68 or fewer ASCII graphic characters
-        (codes 20h through 7Eh).
-
-   4.   If the requested Vendor ID string or the Organization Name contain
-        any double quote (22h) characters, these characters will be
-        converted to single quote (27h) characters.
-
-   5.   Please avoid requesting previously assigned Vendor IDs.  While the
-        Vendor ID list includes both upper and lowercase characters,
-        requests for new Vendor IDs that are the same as an existing ID
-        except for the character case will not be accepted.
-
- Vendor ID                          Organization
- --------- ---------------------------------------------------------------
  3nhtech   3NH Technologies
- 3PARdata  3PARdata, Inc. (now HPE)
+ 3PARdata  3PARdata, Inc.
  A-Max     A-Max Technology Co., Ltd
  ABSOLUTE  Absolute Analysis
  ABT       Angelbird Technologies GmbH
@@ -47,9 +10,9 @@ this list.  There are a few simple rules to follow:
  Actifio   Actifio
  Acuid     Acuid Corporation Ltd.
  AcuLab    AcuLab, Inc. (Tulsa, OK)
- ADAPTEC   Adaptec (now part of Microchip Technology Inc.)
+ ADAPTEC   Adaptec
  ADIC      Advanced Digital Information Corporation
- ADSI      Adaptive Data Systems, Inc. (a Western Digital subsidiary)
+ ADSI      Adaptive Data Systems, Inc.
  ADTX      ADTX Co., Ltd.
  ADVA      ADVA Optical Networking AG
  AEM       AEM Performance Electronics
@@ -73,7 +36,7 @@ this list.  There are a few simple rules to follow:
  ANAMATIC  Anamartic Limited (England)
  Ancor     Ancor Communications, Inc.
  ANCOT     ANCOT Corp.
- ANDATACO  Andataco  (now nStor)
+ ANDATACO  Andataco 
  andiamo   Andiamo Systems, Inc.
  ANOBIT    Anobit
  ANRITSU   Anritsu Corporation
@@ -86,10 +49,10 @@ this list.  There are a few simple rules to follow:
  Arena     MaxTronic International Co., Ltd.
  Argent    Argent Data Systems, Inc.
  ARIO      Ario Data Networks, Inc.
- ARISTOS   Aristos Logic Corp. (now part of Microchip Technology Inc.)
+ ARISTOS   Aristos Logic Corp.
  ARK       ARK Research Corporation
  ARL:UT@A  Applied Research Laboratories : University of Texas at Austin
- ARTECON   Artecon Inc.  (Obs. - now Dot Hill)
+ ARTECON   Artecon Inc.
  Artistic  Artistic Licence (UK) Ltd
  ARTON     Arton Int.
  ASACA     ASACA Corp.
@@ -102,7 +65,7 @@ this list.  There are a few simple rules to follow:
  ASTRO     ASTRODESIGN,Inc.
  ASTUTE    Astute Networks, Inc.
  AT&T      AT&T
- ATA       SCSI / ATA Translator Software (Organization Not Specified)
+ ATA       SCSI / ATA Translator Software
  ATARI     Atari Corporation
  ATech     ATech electronics
  ATG CYG   ATG Cygnet Inc.
@@ -112,7 +75,7 @@ this list.  There are a few simple rules to follow:
  ATX       Alphatronix
  Audio3    Audio3 Ltd.
  AURASEN   Aurasen Limited
- Avago     Avago Technologies (now Broadcom, Inc.)
+ Avago     Avago Technologies
  AVC       AVC Technology Ltd
  AVIDVIDR  AVID Technologies, Inc.
  AVR       Advanced Vision Research
@@ -135,7 +98,7 @@ this list.  There are a few simple rules to follow:
  biodata   Biodata Devices SL
  BIOS      BIOS Corporation
  BIR       Bio-Imaging Research, Inc.
- BiT       BiT Microsystems (obsolete, new ID: BITMICRO)
+ BiT       BiT Microsystems
  BITMICRO  BiT Microsystems, Inc.
  Blendlgy  Blendology Limited
  BLKGUARD  BlockGuard Ltd
@@ -146,13 +109,13 @@ this list.  There are a few simple rules to follow:
  BNCHMARK  Benchmark Tape Systems Corporation
  Bosch     Robert Bosch GmbH
  Botman    Botmanfamily Electronics
- BoxHill   Box Hill Systems Corporation  (Obs. - now Dot Hill)
+ BoxHill   Box Hill Systems Corporation
  BRDGWRKS  Bridgeworks Ltd.
  BREA      BREA Technologies, Inc.
  BREECE    Breece Hill LLC
  BreqLabs  BreqLabs Inc.
  Broadcom  Broadcom Inc.
- BROCADE   Brocade Communications Systems, Incorporated (now Broadcom, Inc.)
+ BROCADE   Brocade Communications Systems, Incorporated
  BUFFALO   BUFFALO INC.
  BULL      Bull Peripherals Corp.
  BUSLOGIC  BusLogic Inc.
@@ -160,7 +123,7 @@ this list.  There are a few simple rules to follow:
  CACHEIO   CacheIO LLC
  CalComp   CalComp, A Lockheed Company
  CALCULEX  CALCULEX, Inc.
- CALIPER   Caliper (California Peripheral Corp.)
+ CALIPER   California Peripheral Corp.
  CAMBEX    Cambex Corporation
  CAMEOSYS  Cameo Systems Inc.
  CANDERA   Candera Inc.
@@ -192,18 +155,18 @@ this list.  There are a few simple rules to follow:
  CMTechno  CMTech
  CNGR SFW  Congruent Software, Inc.
  CNSi      Chaparral Network Storage, Inc.
- CNT       Computer Network Technology (now Broadcom, Inc.)
+ CNT       Computer Network Technology
  COBY      Coby Electronics Corporation, USA
  COGITO    Cogito
  COMAY     Corerise Electronics
- COMPAQ    Compaq Computer Corporation  (now HPE)
- COMPELNT  Compellent Technologies, Inc. (now Dell)
+ COMPAQ    Compaq Computer Corporation
+ COMPELNT  Compellent Technologies, Inc.
  COMPORT   Comport Corp.
  COMPSIG   Computer Signal Corporation
  COMPTEX   Comptex Pty Limited
  CONNER    Conner Peripherals
  Control   Controlant ehf.
- COPANSYS  COPAN SYSTEMS INC (now HPE)
+ COPANSYS  COPAN SYSTEMS INC
  CORAID    Coraid, Inc
  CORE      Core International, Inc.
  CORERISE  Corerise Electronics
@@ -212,7 +175,7 @@ this list.  There are a few simple rules to follow:
  CPL       Cross Products Ltd
  CPU TECH  CPU Technology, Inc.
  CREO      Creo Products Inc.
- CROSFLD   Crosfield Electronics (now FujiFilm Electonic Imaging Ltd)
+ CROSFLD   Crosfield Electronics
  CROSSRDS  Crossroads Systems, Inc.
  crosswlk  Crosswalk, Inc.
  CSCOVRTS  Cisco - Veritas
@@ -240,7 +203,7 @@ this list.  There are a few simple rules to follow:
  DDN       DataDirect Networks, Inc.
  DDRDRIVE  DDRdrive LLC
  DE        Dimension Engineering LLC
- DEC       Digital Equipment Corporation (now HPE)
+ DEC       Digital Equipment Corporation
  DEI       Digital Engineering, Inc.
  DELL      Dell, Inc.
  Dell(tm)  Dell, Inc
@@ -254,7 +217,7 @@ this list.  There are a few simple rules to follow:
  DGC       Data General Corp.
  DIGIDATA  Digi-Data Corporation
  DigiIntl  Digi International
- Digital   Digital Equipment Corporation (now HPE)
+ Digital   Digital Equipment Corporation
  DILOG     Distributed Logic Corp.
  DISC      Document Imaging Systems Corp.
  DiscSoft  Disc Soft Ltd
@@ -293,7 +256,7 @@ this list.  There are a few simple rules to follow:
  EMC       EMC Corp.
  EMiT      EMiT Conception Eletronique
  EMTEC     EMTEC Magnetics
- EMULEX    Emulex (now Broadcom, Inc.)
+ EMULEX    Emulex
  ENERGY-B  Energybeam Corporation
  ENGENIO   Engenio Information Technologies, Inc.
  ENMOTUS   Enmotus Inc
@@ -302,10 +265,10 @@ this list.  There are a few simple rules to follow:
  EPSON     Epson
  EQLOGIC   EqualLogic
  Eris/RSI  RSI Systems, Inc.
- ETERNE    EterneData Technology Co.,Ltd.(China PRC.)
- EuroLogc  Eurologic Systems Limited (now part of Microchip Technology Inc.)
+ ETERNE    EterneData Technology Co.,Ltd.
+ EuroLogc  Eurologic Systems Limited
  evolve    Evolution Technologies, Inc
- EXABYTE   Exabyte Corp. (now part of Tandberg)
+ EXABYTE   Exabyte Corp.
  EXATEL    Exatelecom Co., Ltd.
  EXAVIO    Exavio, Inc.
  Exsequi   Exsequi Ltd
@@ -326,15 +289,15 @@ this list.  There are a few simple rules to follow:
  FRESHDTK  FreshDetect GmbH
  FSC       Fujitsu Siemens Computers
  FTPL      Frontline Technologies Pte Ltd
- FUJI      Fuji Electric Co., Ltd. (Japan)
+ FUJI      Fuji Electric Co., Ltd.
  FUJIFILM  Fuji Photo Film, Co., Ltd.
  FUJITSU   Fujitsu
  FUNAI     Funai Electric Co., Ltd.
  FUSIONIO  Fusion-io Inc.
- FUTURED   Future Domain Corp. (now part of Microchip Technology Inc.)
+ FUTURED   Future Domain Corp.
  G&D       Giesecke & Devrient GmbH
  G.TRONIC  Globaltronic - Electronica e Telecomunicacoes, S.A.
- Gadzoox   Gadzoox Networks, Inc. (now Broadcom, Inc.)
+ Gadzoox   Gadzoox Networks, Inc.
  Gammaflx  Gammaflux L.P.
  GDI       Generic Distribution International
  GEMALTO   gemalto
@@ -360,7 +323,7 @@ this list.  There are a few simple rules to follow:
  Helldyne  Helldyne, Inc
  Heydays   Mazo Technology Co., Ltd.
  HGST      HGST a Western Digital Company
- HI-TECH   HI-TECH Software Pty. Ltd. (now part of Microchip Technology Inc.)
+ HI-TECH   HI-TECH Software Pty. Ltd.
  HITACHI   Hitachi America Ltd or Nissei Sangyo America Ltd
  HL-DT-ST  Hitachi-LG Data Storage, Inc.
  HONEYWEL  Honeywell Inc.
@@ -401,7 +364,7 @@ this list.  There are a few simple rules to follow:
  INITIO    Initio Corporation
  INNES     INNES
  INNO      InnoCon Medical ApS
- INRANGE   INRANGE Technologies Corporation (now Broadcom, Inc.)
+ INRANGE   INRANGE Technologies Corporation
  Insight   L-3 Insight Technology Inc
  INSITE    Insite Peripherals
  INSPUR    Inspur Electronic Information Industry Co.,Ltd.
@@ -454,7 +417,7 @@ this list.  There are a few simple rules to follow:
  LASERDRV  LaserDrive Limited
  LASERGR   Lasergraphics, Inc.
  LeapFrog  LeapFrog Enterprises, Inc.
- LEFTHAND  LeftHand Networks (now HPE)
+ LEFTHAND  LeftHand Networks
  Leica     Leica Camera AG
  LENOVO    Lenovo
  Lexar     Lexar Media, Inc.
@@ -466,12 +429,12 @@ this list.  There are a few simple rules to follow:
  LMS       Laser Magnetic Storage International Company
  LNKDSTR   Guangzhou LinkedStor Technology Co., LTD.
  LoupTech  Loup Technologies, Inc.
- LSI       LSI Corp. (now Broadcom, Inc.)
+ LSI       LSI Corp.
  LSILOGIC  LSI Logic Storage Systems, Inc.
  LTO-CVE   Linear Tape - Open, Compliance Verification Entity
  LUXPRO    Luxpro Corporation
  MacroSAN  MacroSAN Technologies Co., Ltd.
- Malakite  Malachite Technologies (New VID is: Sandial)
+ Malakite  Malachite Technologies
  MarcBoon  marcboon.com
  Marner    Marner Storage Technologies, Inc.
  MARVELL   Marvell Semiconductor, Inc.
@@ -486,7 +449,7 @@ this list.  There are a few simple rules to follow:
  MAYCOM    maycom Co., Ltd.
  MBEAT     K-WON C&C Co.,Ltd
  MCC       Measurement Computing Corporation
- McDATA    McDATA Corporation (now Broadcom, Inc.)
+ McDATA    McDATA Corporation
  MCUBE     Mcube Technology Co., Ltd.
  MDI       Micro Design International, Inc.
  MEADE     Meade Instruments Corporation
@@ -541,15 +504,14 @@ this list.  There are a few simple rules to follow:
  NAKAMICH  Nakamichi Corporation
  NatInst   National Instruments
  NatSemi   National Semiconductor Corp.
- NCITS     InterNational Committee for Information Technology Standards
-           (INCITS)
+ NCITS     InterNational Committee for Information Technology Standards (INCITS)
  NCL       NCL America
  NCR       NCR Corporation
  NDBTECH   NDB Technologie Inc.
  Neartek   Neartek, Inc.
  NEC       NEC
  nemon     NorthEast Monitoring
- NETAPP    NetApp, Inc. (was Network Appliance)
+ NETAPP    NetApp, Inc.
  NetBSD    The NetBSD Foundation
  Netcom    Netcom Storage
  NETENGIN  NetEngine, Inc.
@@ -560,7 +522,7 @@ this list.  There are a few simple rules to follow:
  NFINIDAT  Infinidat Ltd.
  NHR       NH Research, Inc.
  Nike      Nike, Inc.
- Nimble    Nimble Storage (now HPE)
+ Nimble    Nimble Storage
  NISCA     NISCA Inc.
  NISHAN    Nishan Systems Inc.
  Nitz      Nitz Associates, Inc.
@@ -580,11 +542,11 @@ this list.  There are a few simple rules to follow:
  OCE       Oce Graphics
  ODS       ShenZhen DCS Group Co.,Ltd
  OHDEN     Ohden Co., Ltd.
- OKI       OKI Electric Industry Co.,Ltd (Japan)
+ OKI       OKI Electric Industry Co.,Ltd
  Olidata   Olidata S.p.A.
  OMI       Optical Media International
  OMNIFI    Rockford Corporation - Omnifi Media
- OMNIS     OMNIS Company (FRANCE)
+ OMNIS     OMNIS Company
  Ophidian  Ophidian Designs
  opslag    Tyrone Systems
  Optelec   Optelec BV
@@ -623,7 +585,7 @@ this list.  There are a few simple rules to follow:
  PIVOT3    Pivot3, Inc.
  PLASMON   Plasmon Data
  Pliant    Pliant Technology, Inc.
- PMCSIERA  PMC-Sierra (now part of Microchip Technology Inc.)
+ PMCSIERA  PMC-Sierra
  PME       Precision Measurement Engineering
  PNNMed    PNN Medical SA
  POKEN     Poken SA
@@ -716,7 +678,7 @@ this list.  There are a few simple rules to follow:
  Seanodes  Seanodes
  Sec. Key  SecureKey Technologies Inc.
  SEQUOIA   Sequoia Advanced Technologies, Inc.
- SGI       Silicon Graphics International (now HPE)
+ SGI       Silicon Graphics International
  SGL       Software Generation Ltd
  Shannon   Shannon Systems Co., Ltd.
  Shinko    Shinko Electric Co., Ltd.
@@ -725,16 +687,16 @@ this list.  There are a few simple rules to follow:
  SigmaTel  SigmaTel, Inc.
  SII       Seiko Instruments Inc.
  Silk      Silk
- SIMPLE    SimpleTech, Inc. (Obs - now STEC, Inc.)
+ SIMPLE    SimpleTech, Inc.
  SIVMSD    IMAGO SOFTWARE SL
  SKhynix   SK hynix Inc.
  SKT       SK Telecom Co., Ltd.
- SLCNSTOR  SiliconStor, Inc. (now Broadcom, Inc.)
- SLI       Sierra Logic, Inc. (now Broadcom, Inc.)
+ SLCNSTOR  SiliconStor, Inc.
+ SLI       Sierra Logic, Inc.
  SMCI      Super Micro Computer, Inc.
  SmrtStor  Smart Storage Systems
  SMS       Scientific Micro Systems/OMTI
- SMSC      SMSC Storage, Inc. (now part of Microchip Technology Inc.)
+ SMSC      SMSC Storage, Inc.
  SMX       Smartronix, Inc.
  SNYSIDE   Sunnyside Computing Inc.
  SoftLock  Softlock Digital Security Provider
@@ -746,7 +708,7 @@ this list.  There are a few simple rules to follow:
  SPD       Storage Products Distribution, Inc.
  SPECIAL   Special Computing Co.
  SPECTRA   Spectra Logic, a Division of Western Automation Labs, Inc.
- SPERRY    Sperry (now Unisys Corp.)
+ SPERRY    Sperry
  Spintso   Spintso International AB
  STARBORD  Starboard Storage Systems, Inc.
  STARWIND  StarWind Software, Inc.
@@ -756,7 +718,7 @@ this list.  There are a few simple rules to follow:
  STNWOOD   Stonewood Group
  STONEFLY  StoneFly Networks, Inc.
  STOR      StorageNetworks, Inc.
- STORAPP   StorageApps, Inc. (now HPE)
+ STORAPP   StorageApps, Inc.
  STORCIUM  Intelligent Systems Services Inc.
  STORCOMP  Storage Computer Corporation
  STORM     Storm Technology, Inc.
@@ -771,7 +733,7 @@ this list.  There are a few simple rules to follow:
  Swinxs    Swinxs BV
  SWISSLUN  Cleondris GmbH
  SYMANTEC  Symantec Corporation
- SYMBIOS   Symbios Logic Inc. (now Broadcom, Inc.)
+ SYMBIOS   Symbios Logic Inc.
  SYMPLY    Symply, Inc.
  SYMWAVE   Symwave, Inc.
  SYNCSORT  Syncsort Incorporated
@@ -785,7 +747,7 @@ this list.  There are a few simple rules to follow:
  TALARIS   Talaris Systems, Inc.
  TALLGRAS  Tallgrass Technologies
  TANDBERG  Tandberg Data A/S
- TANDEM    Tandem (now HPE)
+ TANDEM    Tandem
  TANDON    Tandon
  Tarabios  Tarabios Technologies
  TCL       TCL Shenzhen ASIC MIcro-electronics Ltd
@@ -846,9 +808,8 @@ this list.  There are a few simple rules to follow:
  VikingES  Viking Enterprise Solutions
  VIOLIN    Violin Memory, Inc.
  VIRIDENT  Virident Systems, Inc.
- VITESSE   Vitesse Semiconductor Corporation (now part of Microchip Technology
-           Inc.)
- VIXEL     Vixel Corporation (now Broadcom, Inc.)
+ VITESSE   Vitesse Semiconductor Corporation
+ VIXEL     Vixel Corporation
  VLS       Van Lent Systems BV
  VMAX      VMAX Technologies Corp.
  VMware    VMware Inc.
@@ -870,15 +831,14 @@ this list.  There are a few simple rules to follow:
  WeeraRes  Weera Research Pte Ltd
  Wildflwr  Wildflower Technologies, Inc.
  WSC0001   Wisecom, Inc.
- X3        InterNational Committee for Information Technology Standards
-           (INCITS)
+ X3        InterNational Committee for Information Technology Standards (INCITS)
  XEBEC     Xebec Corporation
  XENSRC    XenSource, Inc.
  Xerox     Xerox Corporation
  Xield     Xield Technologies Limited
  XIOtech   XIOtech Corporation
  XIRANET   Xiranet Communications GmbH
- XIV       XIV (now IBM)
+ XIV       XIV
  XtremIO   XtremIO
  XYRATEX   Xyratex
  YADRO     YADRO
