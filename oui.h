@@ -19,4 +19,4 @@ FOUNDATION_EXPORT const unsigned char ouiVersionString[];
 #import <oui/CStringMap.hpp>
 #import <oui/oui.hpp>
 #import <oui/t10_vendorid.hpp>
-#import <oui/oui_vendorid.hpp>
+#import <oui/oui_vendor.hpp>
