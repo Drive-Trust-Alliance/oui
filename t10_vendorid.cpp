@@ -20,7 +20,7 @@ static const size_t nData = sizeof(data)/sizeof(data[0]);
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const CString_Lookup_Table vendor_for_vendorID =
+const CString_Lookup_Table vendor_for_vendorID_table =
     make_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
@@ -28,7 +28,15 @@ const CString_Lookup_Table vendor_for_vendorID =
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const CString_Lookup_Table vendorID_for_vendor =
+const CString_Canonical_Lookup_Table vendor_for_vendorID_canonically_table =
+    make_table<CString_Canonical_Lookup_Table>(data,nData);
+
+#if defined(__clang__)
+[[clang::no_destroy]]
+#elif defined(__GNUC__)
+[[no_destroy]]
+#endif
+const CString_Lookup_Table vendorID_for_vendor_table =
     make_inverse_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
@@ -36,6 +44,6 @@ const CString_Lookup_Table vendorID_for_vendor =
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const CString_Canonical_Lookup_Table vendorID_for_vendor_canonically =
+const CString_Canonical_Lookup_Table vendorID_for_vendor_canonically_table =
     make_inverse_table<CString_Canonical_Lookup_Table>(data,nData);
 

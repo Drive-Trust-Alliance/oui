@@ -23,7 +23,7 @@ static const size_t nData=sizeof(data)/sizeof(data[0]);
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const CString_Lookup_Table manufacturer_for_oui =
+const CString_Lookup_Table manufacturer_for_oui_table =
     make_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
@@ -31,7 +31,7 @@ const CString_Lookup_Table manufacturer_for_oui =
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const CString_Lookup_Table oui_for_manufacturer =
+const CString_Lookup_Table oui_for_manufacturer_table =
     make_inverse_table<CString_Lookup_Table>(data,nData);
 
 #if defined(__clang__)
@@ -39,5 +39,5 @@ const CString_Lookup_Table oui_for_manufacturer =
 #elif defined(__GNUC__)
 [[no_destroy]]
 #endif
-const CString_Canonical_Lookup_Table oui_for_manufacturer_canonically =
+const CString_Canonical_Lookup_Table oui_for_manufacturer_canonically_table =
     make_inverse_table<CString_Canonical_Lookup_Table>(data,nData);

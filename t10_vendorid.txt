@@ -1,5 +1,5 @@
 This file contains the list of T10 Technical Committee vendor identifications
-as of 2022/11/30 at 00:17:41.  The purpose of this list is to help avoid
+as of 2022/12/02 at 00:17:41.  The purpose of this list is to help avoid
 redundant usage of vendor identifications.   T10, a subcommittee of the
 InterNational Committee on Information Technology Standards (INCITS),
 maintains a list of vendor identifications currently in use.  Please use the
@@ -711,7 +711,7 @@ this list.  There are a few simple rules to follow:
  SDI       Storage Dimensions, Inc.
  SDS       Solid Data Systems
  SEAC      SeaChange International, Inc.
- SEAGATE   Seagate
+ SEAGATE   Seagate Technology
  SEAGRAND  SEAGRAND In Japan
  Seanodes  Seanodes
  Sec. Key  SecureKey Technologies Inc.

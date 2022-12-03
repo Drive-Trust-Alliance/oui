@@ -673,7 +673,7 @@
 {"SDI","Storage Dimensions, Inc."},
 {"SDS","Solid Data Systems"},
 {"SEAC","SeaChange International, Inc."},
-{"SEAGATE","Seagate"},
+{"SEAGATE","Seagate Technology"},
 {"SEAGRAND","SEAGRAND In Japan"},
 {"Seanodes","Seanodes"},
 {"Sec.","Key  SecureKey Technologies Inc."},

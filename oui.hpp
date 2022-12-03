@@ -13,8 +13,8 @@
 
 #include <oui/CStringMap.hpp>
 
-extern "C" const CString_Lookup_Table manufacturer_for_oui;
-extern "C" const CString_Lookup_Table oui_for_manufacturer;
-extern "C" const CString_Canonical_Lookup_Table oui_for_manufacturer_canonically;
+extern "C" const CString_Lookup_Table manufacturer_for_oui_table;
+extern "C" const CString_Lookup_Table oui_for_manufacturer_table;
+extern "C" const CString_Canonical_Lookup_Table oui_for_manufacturer_canonically_table;
 
 #endif /* oui_hpp */
