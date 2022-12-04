@@ -26,6 +26,15 @@ static const size_t nData=sizeof(data)/sizeof(data[0]);
 const CString_Lookup_Table manufacturer_for_oui_table =
     make_table<CString_Lookup_Table>(data,nData);
 
+
+#if defined(__clang__)
+[[clang::no_destroy]]
+#elif defined(__GNUC__)
+[[no_destroy]]
+#endif
+const CString_Canonical_Lookup_Table manufacturer_for_oui_canonically_table =
+    make_table<CString_Canonical_Lookup_Table>(data,nData);
+
 #if defined(__clang__)
 [[clang::no_destroy]]
 #elif defined(__GNUC__)

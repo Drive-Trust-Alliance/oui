@@ -7,32 +7,35 @@
 
 #include "oui_vendor.hpp"
 
-const char * manufacturer_for_oui(const char * oui) {
-    CString_Lookup_Table::const_iterator pManufacturer = manufacturer_for_oui_table.find(oui);
-    return pManufacturer == manufacturer_for_oui_table.end()
-        ? NULL
-        : pManufacturer->second;
+CString manufacturer_for_oui(CString oui) {
+    return lookup(manufacturer_for_oui_table, oui);
 }
 
-const char * vendorID_for_vendor(const char * vendor) {
-    for (CString_Lookup_Table::const_iterator pVendorID = vendorID_for_vendor_table.find(vendor);
-         pVendorID != vendorID_for_vendor_table.end(); ) {
-            return pVendorID->second;
-    }
+CString manufacturer_for_oui_canonically(CString oui) {
+    return lookup(manufacturer_for_oui_canonically_table, oui);
+}
+
+
+CString manufacturer_for_oui_canonically_if_necessary(CString oui) {
+    CString manufacturer;
+    if (NULL != (manufacturer = manufacturer_for_oui(oui)))
+        return manufacturer;
+    if (NULL != (manufacturer = manufacturer_for_oui_canonically(oui)))
+        return manufacturer;
     return NULL;
 }
 
-
-const char * vendorID_for_vendor_canonically(const char * vendor) {
-    for (CString_Lookup_Table::const_iterator pVendorID = vendorID_for_vendor_canonically_table.find(vendor);
-         pVendorID != vendorID_for_vendor_canonically_table.end(); ) {
-            return pVendorID->second;
-    }
-    return NULL;
+CString vendorID_for_vendor(CString vendor) {
+    return lookup(vendorID_for_vendor_table, vendor);
 }
 
-const char * vendorID_for_vendor_canonically_if_necessary(const char * vendor) {
-    const char * vendorID;
+
+CString vendorID_for_vendor_canonically(CString vendor) {
+    return lookup(vendorID_for_vendor_canonically_table, vendor);
+}
+
+CString vendorID_for_vendor_canonically_if_necessary(CString vendor) {
+    CString vendorID;
     if (NULL != (vendorID = vendorID_for_vendor(vendor)))
         return vendorID;
     if (NULL != (vendorID = vendorID_for_vendor_canonically(vendor)))
@@ -40,24 +43,16 @@ const char * vendorID_for_vendor_canonically_if_necessary(const char * vendor) {
     return NULL;
 }
 
-const char * vendor_for_vendorID(const char * vendorID) {
-    for (CString_Lookup_Table::const_iterator pVendor = vendor_for_vendorID_table.find(vendorID);
-         pVendor != vendor_for_vendorID_table.end(); ) {
-            return pVendor->second;
-    }
-    return NULL;
+CString vendor_for_vendorID(CString vendorID) {
+    return lookup(vendor_for_vendorID_table, vendorID);
 }
 
-const char * vendor_for_vendorID_canonically(const char * vendorID) {
-    for (CString_Lookup_Table::const_iterator pVendor = vendor_for_vendorID_canonically_table.find(vendorID);
-         pVendor != vendor_for_vendorID_canonically_table.end(); ) {
-            return pVendor->second;
-    }
-    return NULL;
+CString vendor_for_vendorID_canonically(CString vendorID) {
+    return lookup(vendor_for_vendorID_canonically_table, vendorID);
 }
 
-const char * vendor_for_vendorID_canonically_if_necessary(const char * vendorID) {
-    const char * vendor;
+CString vendor_for_vendorID_canonically_if_necessary(CString vendorID) {
+    CString vendor;
     if (NULL != (vendor = vendor_for_vendorID(vendorID)))
         return vendor;
     if (NULL != (vendor = vendor_for_vendorID_canonically(vendorID)))
@@ -65,29 +60,50 @@ const char * vendor_for_vendorID_canonically_if_necessary(const char * vendorID)
     return NULL;
 }
 
-const char * vendorID_for_oui_canonically_if_necessary(const char * oui) {
-    const char * manufacturer = manufacturer_for_oui(oui);
+CString vendorID_for_oui(CString oui) {
+    CString manufacturer = manufacturer_for_oui(oui);
+    return manufacturer == NULL ? NULL : vendorID_for_vendor(manufacturer);
+}
+
+CString vendorID_for_oui_canonically(CString oui) {
+    CString manufacturer = manufacturer_for_oui(oui);
+    return manufacturer == NULL ? NULL : vendorID_for_vendor_canonically(manufacturer);
+}
+
+CString vendorID_for_oui_canonically_if_necessary(CString oui) {
+    CString manufacturer = manufacturer_for_oui(oui);
     return manufacturer == NULL ? NULL : vendorID_for_vendor_canonically_if_necessary(manufacturer);
 }
 
-const char * oui_for_vendor_canonically_if_necessary(const char * vendor) {
-    for (CString_Lookup_Table::const_iterator
-         poui = oui_for_manufacturer_table.find(vendor);
-         poui != oui_for_manufacturer_table.end(); ) {
-        return poui->second;
-    }
-    
-    for (CString_Canonical_Lookup_Table::const_iterator
-         poui = oui_for_manufacturer_canonically_table.find(vendor);
-         poui != oui_for_manufacturer_canonically_table.end(); ) {
-        return poui->second;
-    }
-    
+CString oui_for_vendor(CString vendor) {
+    return lookup(oui_for_manufacturer_table, vendor);
+}
+
+CString oui_for_vendor_canonically(CString vendor) {
+    return lookup(oui_for_manufacturer_canonically_table, vendor);
+}
+
+CString oui_for_vendor_canonically_if_necessary(CString vendor) {
+    CString oui;
+    if (NULL != (oui = oui_for_vendor(vendor)))
+        return oui;
+    if (NULL != (oui = oui_for_vendor_canonically(vendor)))
+        return oui;
     return NULL;
 }
 
-const char * oui_for_vendorID_canonically_if_necessary(const char * vendorID) {
-    const char * vendor=vendor_for_vendorID(vendorID);
+CString oui_for_vendorID(CString vendorID) {
+    CString vendor=vendor_for_vendorID(vendorID);
+    return vendor == NULL ? NULL : oui_for_vendor(vendor);
+}
+
+CString oui_for_vendorID_canonically(CString vendorID) {
+    CString vendor=vendor_for_vendorID(vendorID);
+    return vendor == NULL ? NULL : oui_for_vendor_canonically(vendor);
+}
+
+CString oui_for_vendorID_canonically_if_necessary(CString vendorID) {
+    CString vendor=vendor_for_vendorID(vendorID);
     return vendor == NULL ? NULL : oui_for_vendor_canonically_if_necessary(vendor);
 }
 
