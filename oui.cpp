@@ -50,3 +50,6 @@ const CString_Lookup_Table oui_for_manufacturer_table =
 #endif
 const CString_Canonical_Lookup_Table oui_for_manufacturer_canonically_table =
     make_inverse_table<CString_Canonical_Lookup_Table>(data,nData);
+
+
+const CString private_oui = "1000000";

@@ -98,12 +98,12 @@ CString oui_for_vendorID(CString vendorID) {
 }
 
 CString oui_for_vendorID_canonically(CString vendorID) {
-    CString vendor=vendor_for_vendorID(vendorID);
+    CString vendor=vendor_for_vendorID_canonically(vendorID);
     return vendor == NULL ? NULL : oui_for_vendor_canonically(vendor);
 }
 
 CString oui_for_vendorID_canonically_if_necessary(CString vendorID) {
-    CString vendor=vendor_for_vendorID(vendorID);
+    CString vendor=vendor_for_vendorID_canonically_if_necessary(vendorID);
     return vendor == NULL ? NULL : oui_for_vendor_canonically_if_necessary(vendor);
 }
 
