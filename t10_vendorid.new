@@ -19,6 +19,7 @@
  AERODISK  AERO DISK LLC
  AERONICS  Aeronics, Inc.
  AGFA      AGFA
+ AGILACK   Agilack
  Agilent   Agilent Technologies
  AIC       Advanced Industrial Computer, Inc.
  AIPTEK    AIPTEK International Inc.
@@ -134,6 +135,7 @@
  CDC       Control Data or MPI
  CDP       Columbia Data Products
  CDS       Cirrus Data Solutions, Inc.
+ ceacent   Shenzhen Jiahua Zhongli Technology Co.
  Celsia    A M Bromley Limited
  CenData   Central Data Corporation
  Cereva    Cereva Networks Inc.
@@ -289,7 +291,7 @@
  FRESHDTK  FreshDetect GmbH
  FSC       Fujitsu Siemens Computers
  FTPL      Frontline Technologies Pte Ltd
- FUJI      Fuji Electric Co., Ltd.
+ FUJI      Fuji Electric Co., Ltd. (Japan)
  FUJIFILM  Fuji Photo Film, Co., Ltd.
  FUJITSU   Fujitsu
  FUNAI     Funai Electric Co., Ltd.
@@ -341,7 +343,7 @@
  HYUNWON   HYUNWON inc
  i-cubed   i-cubed ltd.
  I-O DATA  I-O DATA DEVICE
- IBM       International Business Machines
+ IBM       International Business Machines Corporation
  Icefield  Icefield Tools Corporation
  Iceweb    Iceweb Storage Corp
  ICL       ICL
@@ -417,7 +419,7 @@
  LASERDRV  LaserDrive Limited
  LASERGR   Lasergraphics, Inc.
  LeapFrog  LeapFrog Enterprises, Inc.
- LEFTHAND  LeftHand Networks
+ LeapIO    LeapIO
  Leica     Leica Camera AG
  LENOVO    Lenovo
  Lexar     Lexar Media, Inc.
@@ -542,11 +544,11 @@
  OCE       Oce Graphics
  ODS       ShenZhen DCS Group Co.,Ltd
  OHDEN     Ohden Co., Ltd.
- OKI       OKI Electric Industry Co.,Ltd
+ OKI       OKI Electric Industry Co.,Ltd (Japan)
  Olidata   Olidata S.p.A.
  OMI       Optical Media International
  OMNIFI    Rockford Corporation - Omnifi Media
- OMNIS     OMNIS Company
+ OMNIS     OMNIS Company (FRANCE)
  Ophidian  Ophidian Designs
  opslag    Tyrone Systems
  Optelec   Optelec BV
@@ -612,6 +614,7 @@
  Qi-Hardw  Qi Hardware
  QIC       Quarter-Inch Cartridge Drive Standards, Inc.
  QLogic    QLogic Corporation
+ QLS       QLS Consulting
  QNAP      QNAP Systems
  Qsan      QSAN Technology, Inc.
  QStar     QStar Technologies, Inc
@@ -673,7 +676,7 @@
  SDI       Storage Dimensions, Inc.
  SDS       Solid Data Systems
  SEAC      SeaChange International, Inc.
- SEAGATE   Seagate
+ SEAGATE   Seagate Technology
  SEAGRAND  SEAGRAND In Japan
  Seanodes  Seanodes
  Sec. Key  SecureKey Technologies Inc.
@@ -845,6 +848,7 @@
  YINHE     NUDT Computer Co.
  YIXUN     Yixun Electronic Co.,Ltd.
  YOTTA     YottaYotta, Inc.
+ zadara    Zadara Inc.
  Zarva     Zarva Digital Technology Co., Ltd.
  ZBS       SMARTX Corporation
  ZETTA     Zetta Systems, Inc.
