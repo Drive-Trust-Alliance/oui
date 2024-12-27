@@ -1,5 +1,42 @@
+This file contains the list of T10 Technical Committee vendor identifications
+as of 2024/12/27 at 02:10:00.  The purpose of this list is to help avoid
+redundant usage of vendor identifications.   T10, a subcommittee of the
+InterNational Committee on Information Technology Standards (INCITS),
+maintains a list of vendor identifications currently in use.  Please use the
+web form at www.t10.org/members/vendorid.htm to submit your vendor
+identification request prior to using a new vendor identification.  This will
+avoid potential conflicts.
+
+When requesting a new vendor ID, please specify your preferred vendor ID
+code and your organization name EXACTLY as you would like it to appear in
+this list.  There are a few simple rules to follow:
+
+   1.   The Vendor Identification identifies a Vendor, not a product or 
+        product line. If you need to identify a product, consider using 
+        the PRODUCT IDENTIFICATION field in the Standard INQUIRY data 
+        format (see the latest SPC-n standard).
+
+   2.   The Vendor ID code shall be 8 or fewer ASCII graphic characters
+        (codes 21h through 7Eh). Some standards that use T10 Vendor ID
+        strings add space characters (20h) to the right of Vendor IDs
+        shorter than 8 characters to make exactly 8 characters.
+
+   3.   The Organization Name shall be 68 or fewer ASCII graphic characters
+        (codes 20h through 7Eh).
+
+   4.   If the requested Vendor ID string or the Organization Name contain
+        any double quote (22h) characters, these characters will be
+        converted to single quote (27h) characters.
+
+   5.   Please avoid requesting previously assigned Vendor IDs.  While the
+        Vendor ID list includes both upper and lowercase characters,
+        requests for new Vendor IDs that are the same as an existing ID
+        except for the character case will not be accepted.
+
+ Vendor ID                          Organization
+ --------- ---------------------------------------------------------------
  3nhtech   3NH Technologies
- 3PARdata  3PARdata, Inc.
+ 3PARdata  3PARdata, Inc. (now HPE)
  A-Max     A-Max Technology Co., Ltd
  ABSOLUTE  Absolute Analysis
  ABT       Angelbird Technologies GmbH
@@ -10,9 +47,9 @@
  Actifio   Actifio
  Acuid     Acuid Corporation Ltd.
  AcuLab    AcuLab, Inc. (Tulsa, OK)
- ADAPTEC   Adaptec
+ ADAPTEC   Adaptec (now part of Microchip Technology Inc.)
  ADIC      Advanced Digital Information Corporation
- ADSI      Adaptive Data Systems, Inc.
+ ADSI      Adaptive Data Systems, Inc. (a Western Digital subsidiary)
  ADTX      ADTX Co., Ltd.
  ADVA      ADVA Optical Networking AG
  AEM       AEM Performance Electronics
@@ -37,7 +74,7 @@
  ANAMATIC  Anamartic Limited (England)
  Ancor     Ancor Communications, Inc.
  ANCOT     ANCOT Corp.
- ANDATACO  Andataco 
+ ANDATACO  Andataco  (now nStor)
  andiamo   Andiamo Systems, Inc.
  ANOBIT    Anobit
  ANRITSU   Anritsu Corporation
@@ -50,10 +87,10 @@
  Arena     MaxTronic International Co., Ltd.
  Argent    Argent Data Systems, Inc.
  ARIO      Ario Data Networks, Inc.
- ARISTOS   Aristos Logic Corp.
+ ARISTOS   Aristos Logic Corp. (now part of Microchip Technology Inc.)
  ARK       ARK Research Corporation
  ARL:UT@A  Applied Research Laboratories : University of Texas at Austin
- ARTECON   Artecon Inc.
+ ARTECON   Artecon Inc.  (Obs. - now Dot Hill)
  Artistic  Artistic Licence (UK) Ltd
  ARTON     Arton Int.
  ASACA     ASACA Corp.
@@ -66,7 +103,7 @@
  ASTRO     ASTRODESIGN,Inc.
  ASTUTE    Astute Networks, Inc.
  AT&T      AT&T
- ATA       SCSI / ATA Translator Software
+ ATA       SCSI / ATA Translator Software (Organization Not Specified)
  ATARI     Atari Corporation
  ATech     ATech electronics
  ATG CYG   ATG Cygnet Inc.
@@ -76,7 +113,7 @@
  ATX       Alphatronix
  Audio3    Audio3 Ltd.
  AURASEN   Aurasen Limited
- Avago     Avago Technologies
+ Avago     Avago Technologies (now Broadcom, Inc.)
  AVC       AVC Technology Ltd
  AVIDVIDR  AVID Technologies, Inc.
  AVR       Advanced Vision Research
@@ -99,7 +136,7 @@
  biodata   Biodata Devices SL
  BIOS      BIOS Corporation
  BIR       Bio-Imaging Research, Inc.
- BiT       BiT Microsystems
+ BiT       BiT Microsystems (obsolete, new ID: BITMICRO)
  BITMICRO  BiT Microsystems, Inc.
  Blendlgy  Blendology Limited
  BLKGUARD  BlockGuard Ltd
@@ -110,13 +147,13 @@
  BNCHMARK  Benchmark Tape Systems Corporation
  Bosch     Robert Bosch GmbH
  Botman    Botmanfamily Electronics
- BoxHill   Box Hill Systems Corporation
+ BoxHill   Box Hill Systems Corporation  (Obs. - now Dot Hill)
  BRDGWRKS  Bridgeworks Ltd.
  BREA      BREA Technologies, Inc.
  BREECE    Breece Hill LLC
  BreqLabs  BreqLabs Inc.
  Broadcom  Broadcom Inc.
- BROCADE   Brocade Communications Systems, Incorporated
+ BROCADE   Brocade Communications Systems, Incorporated (now Broadcom, Inc.)
  BUFFALO   BUFFALO INC.
  BULL      Bull Peripherals Corp.
  BUSLOGIC  BusLogic Inc.
@@ -124,7 +161,7 @@
  CACHEIO   CacheIO LLC
  CalComp   CalComp, A Lockheed Company
  CALCULEX  CALCULEX, Inc.
- CALIPER   California Peripheral Corp.
+ CALIPER   Caliper (California Peripheral Corp.)
  CAMBEX    Cambex Corporation
  CAMEOSYS  Cameo Systems Inc.
  CANDERA   Candera Inc.
@@ -157,18 +194,18 @@
  CMTechno  CMTech
  CNGR SFW  Congruent Software, Inc.
  CNSi      Chaparral Network Storage, Inc.
- CNT       Computer Network Technology
+ CNT       Computer Network Technology (now Broadcom, Inc.)
  COBY      Coby Electronics Corporation, USA
  COGITO    Cogito
  COMAY     Corerise Electronics
- COMPAQ    Compaq Computer Corporation
- COMPELNT  Compellent Technologies, Inc.
+ COMPAQ    Compaq Computer Corporation  (now HPE)
+ COMPELNT  Compellent Technologies, Inc. (now Dell)
  COMPORT   Comport Corp.
  COMPSIG   Computer Signal Corporation
  COMPTEX   Comptex Pty Limited
  CONNER    Conner Peripherals
  Control   Controlant ehf.
- COPANSYS  COPAN SYSTEMS INC
+ COPANSYS  COPAN SYSTEMS INC (now HPE)
  CORAID    Coraid, Inc
  CORE      Core International, Inc.
  CORERISE  Corerise Electronics
@@ -177,7 +214,7 @@
  CPL       Cross Products Ltd
  CPU TECH  CPU Technology, Inc.
  CREO      Creo Products Inc.
- CROSFLD   Crosfield Electronics
+ CROSFLD   Crosfield Electronics (now FujiFilm Electonic Imaging Ltd)
  CROSSRDS  Crossroads Systems, Inc.
  crosswlk  Crosswalk, Inc.
  CSCOVRTS  Cisco - Veritas
@@ -205,7 +242,7 @@
  DDN       DataDirect Networks, Inc.
  DDRDRIVE  DDRdrive LLC
  DE        Dimension Engineering LLC
- DEC       Digital Equipment Corporation
+ DEC       Digital Equipment Corporation (now HPE)
  DEI       Digital Engineering, Inc.
  DELL      Dell, Inc.
  Dell(tm)  Dell, Inc
@@ -219,7 +256,7 @@
  DGC       Data General Corp.
  DIGIDATA  Digi-Data Corporation
  DigiIntl  Digi International
- Digital   Digital Equipment Corporation
+ Digital   Digital Equipment Corporation (now HPE)
  DILOG     Distributed Logic Corp.
  DISC      Document Imaging Systems Corp.
  DiscSoft  Disc Soft Ltd
@@ -258,7 +295,7 @@
  EMC       EMC Corp.
  EMiT      EMiT Conception Eletronique
  EMTEC     EMTEC Magnetics
- EMULEX    Emulex
+ EMULEX    Emulex (now Broadcom, Inc.)
  ENERGY-B  Energybeam Corporation
  ENGENIO   Engenio Information Technologies, Inc.
  ENMOTUS   Enmotus Inc
@@ -267,10 +304,10 @@
  EPSON     Epson
  EQLOGIC   EqualLogic
  Eris/RSI  RSI Systems, Inc.
- ETERNE    EterneData Technology Co.,Ltd.
- EuroLogc  Eurologic Systems Limited
+ ETERNE    EterneData Technology Co.,Ltd.(China PRC.)
+ EuroLogc  Eurologic Systems Limited (now part of Microchip Technology Inc.)
  evolve    Evolution Technologies, Inc
- EXABYTE   Exabyte Corp.
+ EXABYTE   Exabyte Corp. (now part of Tandberg)
  EXATEL    Exatelecom Co., Ltd.
  EXAVIO    Exavio, Inc.
  Exsequi   Exsequi Ltd
@@ -296,10 +333,10 @@
  FUJITSU   Fujitsu
  FUNAI     Funai Electric Co., Ltd.
  FUSIONIO  Fusion-io Inc.
- FUTURED   Future Domain Corp.
+ FUTURED   Future Domain Corp. (now part of Microchip Technology Inc.)
  G&D       Giesecke & Devrient GmbH
  G.TRONIC  Globaltronic - Electronica e Telecomunicacoes, S.A.
- Gadzoox   Gadzoox Networks, Inc.
+ Gadzoox   Gadzoox Networks, Inc. (now Broadcom, Inc.)
  Gammaflx  Gammaflux L.P.
  GDI       Generic Distribution International
  GEMALTO   gemalto
@@ -325,7 +362,7 @@
  Helldyne  Helldyne, Inc
  Heydays   Mazo Technology Co., Ltd.
  HGST      HGST a Western Digital Company
- HI-TECH   HI-TECH Software Pty. Ltd.
+ HI-TECH   HI-TECH Software Pty. Ltd. (now part of Microchip Technology Inc.)
  HITACHI   Hitachi America Ltd or Nissei Sangyo America Ltd
  HL-DT-ST  Hitachi-LG Data Storage, Inc.
  HONEYWEL  Honeywell Inc.
@@ -366,7 +403,7 @@
  INITIO    Initio Corporation
  INNES     INNES
  INNO      InnoCon Medical ApS
- INRANGE   INRANGE Technologies Corporation
+ INRANGE   INRANGE Technologies Corporation (now Broadcom, Inc.)
  Insight   L-3 Insight Technology Inc
  INSITE    Insite Peripherals
  INSPUR    Inspur Electronic Information Industry Co.,Ltd.
@@ -420,6 +457,7 @@
  LASERGR   Lasergraphics, Inc.
  LeapFrog  LeapFrog Enterprises, Inc.
  LeapIO    LeapIO
+ LEFTHAND  LeftHand Networks (now HPE)
  Leica     Leica Camera AG
  LENOVO    Lenovo
  Lexar     Lexar Media, Inc.
@@ -431,12 +469,12 @@
  LMS       Laser Magnetic Storage International Company
  LNKDSTR   Guangzhou LinkedStor Technology Co., LTD.
  LoupTech  Loup Technologies, Inc.
- LSI       LSI Corp.
+ LSI       LSI Corp. (now Broadcom, Inc.)
  LSILOGIC  LSI Logic Storage Systems, Inc.
  LTO-CVE   Linear Tape - Open, Compliance Verification Entity
  LUXPRO    Luxpro Corporation
  MacroSAN  MacroSAN Technologies Co., Ltd.
- Malakite  Malachite Technologies
+ Malakite  Malachite Technologies (New VID is: Sandial)
  MarcBoon  marcboon.com
  Marner    Marner Storage Technologies, Inc.
  MARVELL   Marvell Semiconductor, Inc.
@@ -451,7 +489,7 @@
  MAYCOM    maycom Co., Ltd.
  MBEAT     K-WON C&C Co.,Ltd
  MCC       Measurement Computing Corporation
- McDATA    McDATA Corporation
+ McDATA    McDATA Corporation (now Broadcom, Inc.)
  MCUBE     Mcube Technology Co., Ltd.
  MDI       Micro Design International, Inc.
  MEADE     Meade Instruments Corporation
@@ -506,14 +544,15 @@
  NAKAMICH  Nakamichi Corporation
  NatInst   National Instruments
  NatSemi   National Semiconductor Corp.
- NCITS     InterNational Committee for Information Technology Standards (INCITS)
+ NCITS     InterNational Committee for Information Technology Standards
+           (INCITS)
  NCL       NCL America
  NCR       NCR Corporation
  NDBTECH   NDB Technologie Inc.
  Neartek   Neartek, Inc.
  NEC       NEC
  nemon     NorthEast Monitoring
- NETAPP    NetApp, Inc.
+ NETAPP    NetApp, Inc. (was Network Appliance)
  NetBSD    The NetBSD Foundation
  Netcom    Netcom Storage
  NETENGIN  NetEngine, Inc.
@@ -524,7 +563,7 @@
  NFINIDAT  Infinidat Ltd.
  NHR       NH Research, Inc.
  Nike      Nike, Inc.
- Nimble    Nimble Storage
+ Nimble    Nimble Storage (now HPE)
  NISCA     NISCA Inc.
  NISHAN    Nishan Systems Inc.
  Nitz      Nitz Associates, Inc.
@@ -587,7 +626,7 @@
  PIVOT3    Pivot3, Inc.
  PLASMON   Plasmon Data
  Pliant    Pliant Technology, Inc.
- PMCSIERA  PMC-Sierra
+ PMCSIERA  PMC-Sierra (now part of Microchip Technology Inc.)
  PME       Precision Measurement Engineering
  PNNMed    PNN Medical SA
  POKEN     Poken SA
@@ -681,7 +720,7 @@
  Seanodes  Seanodes
  Sec. Key  SecureKey Technologies Inc.
  SEQUOIA   Sequoia Advanced Technologies, Inc.
- SGI       Silicon Graphics International
+ SGI       Silicon Graphics International (now HPE)
  SGL       Software Generation Ltd
  Shannon   Shannon Systems Co., Ltd.
  Shinko    Shinko Electric Co., Ltd.
@@ -690,16 +729,16 @@
  SigmaTel  SigmaTel, Inc.
  SII       Seiko Instruments Inc.
  Silk      Silk
- SIMPLE    SimpleTech, Inc.
+ SIMPLE    SimpleTech, Inc. (Obs - now STEC, Inc.)
  SIVMSD    IMAGO SOFTWARE SL
  SKhynix   SK hynix Inc.
  SKT       SK Telecom Co., Ltd.
- SLCNSTOR  SiliconStor, Inc.
- SLI       Sierra Logic, Inc.
+ SLCNSTOR  SiliconStor, Inc. (now Broadcom, Inc.)
+ SLI       Sierra Logic, Inc. (now Broadcom, Inc.)
  SMCI      Super Micro Computer, Inc.
  SmrtStor  Smart Storage Systems
  SMS       Scientific Micro Systems/OMTI
- SMSC      SMSC Storage, Inc.
+ SMSC      SMSC Storage, Inc. (now part of Microchip Technology Inc.)
  SMX       Smartronix, Inc.
  SNYSIDE   Sunnyside Computing Inc.
  SoftLock  Softlock Digital Security Provider
@@ -711,7 +750,7 @@
  SPD       Storage Products Distribution, Inc.
  SPECIAL   Special Computing Co.
  SPECTRA   Spectra Logic, a Division of Western Automation Labs, Inc.
- SPERRY    Sperry
+ SPERRY    Sperry (now Unisys Corp.)
  Spintso   Spintso International AB
  STARBORD  Starboard Storage Systems, Inc.
  STARWIND  StarWind Software, Inc.
@@ -721,7 +760,7 @@
  STNWOOD   Stonewood Group
  STONEFLY  StoneFly Networks, Inc.
  STOR      StorageNetworks, Inc.
- STORAPP   StorageApps, Inc.
+ STORAPP   StorageApps, Inc. (now HPE)
  STORCIUM  Intelligent Systems Services Inc.
  STORCOMP  Storage Computer Corporation
  STORM     Storm Technology, Inc.
@@ -736,7 +775,7 @@
  Swinxs    Swinxs BV
  SWISSLUN  Cleondris GmbH
  SYMANTEC  Symantec Corporation
- SYMBIOS   Symbios Logic Inc.
+ SYMBIOS   Symbios Logic Inc. (now Broadcom, Inc.)
  SYMPLY    Symply, Inc.
  SYMWAVE   Symwave, Inc.
  SYNCSORT  Syncsort Incorporated
@@ -750,7 +789,7 @@
  TALARIS   Talaris Systems, Inc.
  TALLGRAS  Tallgrass Technologies
  TANDBERG  Tandberg Data A/S
- TANDEM    Tandem
+ TANDEM    Tandem (now HPE)
  TANDON    Tandon
  Tarabios  Tarabios Technologies
  TCL       TCL Shenzhen ASIC MIcro-electronics Ltd
@@ -811,8 +850,9 @@
  VikingES  Viking Enterprise Solutions
  VIOLIN    Violin Memory, Inc.
  VIRIDENT  Virident Systems, Inc.
- VITESSE   Vitesse Semiconductor Corporation
- VIXEL     Vixel Corporation
+ VITESSE   Vitesse Semiconductor Corporation (now part of Microchip Technology
+           Inc.)
+ VIXEL     Vixel Corporation (now Broadcom, Inc.)
  VLS       Van Lent Systems BV
  VMAX      VMAX Technologies Corp.
  VMware    VMware Inc.
@@ -834,14 +874,15 @@
  WeeraRes  Weera Research Pte Ltd
  Wildflwr  Wildflower Technologies, Inc.
  WSC0001   Wisecom, Inc.
- X3        InterNational Committee for Information Technology Standards (INCITS)
+ X3        InterNational Committee for Information Technology Standards
+           (INCITS)
  XEBEC     Xebec Corporation
  XENSRC    XenSource, Inc.
  Xerox     Xerox Corporation
  Xield     Xield Technologies Limited
  XIOtech   XIOtech Corporation
  XIRANET   Xiranet Communications GmbH
- XIV       XIV
+ XIV       XIV (now IBM)
  XtremIO   XtremIO
  XYRATEX   Xyratex
  YADRO     YADRO
